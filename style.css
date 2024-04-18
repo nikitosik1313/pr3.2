@@ -1,0 +1,81 @@
+* {
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+    /* font-weight: normal; */
+  }
+  
+  body {
+    margin: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    display: flex;
+    gap: 32px;
+    width: 40%;
+    padding: 27px;
+    padding-left: 32px;
+    min-height: calc(50vh - 34.75px);
+    border: 2px solid red;
+  }
+  
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    border-right: 1px solid red;
+  }
+  
+  .card:nth-child(2),
+  .card:nth-child(4) {
+    border-left: 1px solid red;
+  }
+  
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    border-bottom: 1px solid red;
+  }
+  
+  .card:nth-child(3),
+  .card:nth-child(4) {
+    border-top: 1px solid red;
+  }
+  
+  .card__number {
+    position: relative;
+    font-size: 24px;
+  }
+  
+  .card__number::before {
+    border-radius: 100%;
+    border: 2px solid red;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -13.025px;
+    z-index: -1;
+  }
+  
+  .card__title {
+    margin-bottom: 12px;
+  }
+  
+  .card-list__item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+  
+  .card-list__item:nth-child(2n) {
+    color: red;
+  }
+  
+  .card-list__item::marker {
+    content: "- ";
+  }
