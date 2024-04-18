@@ -20,7 +20,7 @@
   .card {
     display: flex;
     gap: 32px;
-    width: 40%;
+    width: 50%;
     padding: 27px;
     padding-left: 32px;
     min-height: calc(50vh - 34.75px);
